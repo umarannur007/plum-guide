@@ -1,0 +1,41 @@
+.booking{
+  display: flex;
+  padding: 4rem 5rem;
+  & > div{
+    flex-basis: 25%;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    border-right: 1px solid var(--color-grey-light);
+    margin-right: 2rem;
+
+    &:nth-child(4), &:nth-child(5){
+      border-right: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+      justify-content: center;
+    }
+    & label, & span{
+      color: var(--color-grey);
+      font-size: 1.4rem;
+    }
+    & select, & div{
+      border: 0;
+      padding: .5rem 0;
+      outline: none;
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #545454;
+      margin-left: -.5rem;
+    }
+    & button{
+      padding: 1.5rem 0;
+      border: 0;
+      background-color: var(--color-primary);
+    }
+  }
+}

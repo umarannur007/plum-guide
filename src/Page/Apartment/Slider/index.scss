@@ -1,0 +1,52 @@
+.slider {
+  padding: 0 8rem;
+  position: relative;
+  top: 15rem;
+
+  &__arr {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    height: 5rem;
+    width: 5rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: .3s all;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+
+    &--left {
+      left: 5rem;
+    }
+
+    &--right {
+      right: 5rem;
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    height: 70rem;
+    & img{
+      margin: 0 auto;
+    }
+  }
+
+  &__counter{
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    right: 6rem;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

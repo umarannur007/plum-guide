@@ -1,0 +1,33 @@
+.apartment{
+  background-color: var(--color-accent);
+  &__details{
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    margin-bottom: -10rem;
+  }
+  &__name{
+    font-size: 6rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+  &__amenities{
+    padding: 2rem 0;
+    & span{
+      padding-right: 1.5rem;
+    }
+  }
+  &__info{
+    display: flex;
+    border-top: 1px solid var(--color-grey);
+    border-bottom: 1px solid var(--color-grey);
+    padding: 1rem 0;
+    & > div {
+      padding: 0 2rem;
+      border-right: 1px solid var(--color-grey);
+    }
+    & > div:last-child{
+      border-right: 0;
+    }
+  }
+}
