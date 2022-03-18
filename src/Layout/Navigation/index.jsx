@@ -11,10 +11,10 @@ const Navigation = () => {
         </div>
         <ul className="navigation-list">
           <li className="navigation-list__item">
-            <a href="#" className="navigation-list__link navigation-list__link--active">HOMES</a>
+            <a href="/" className="navigation-list__link navigation-list__link--active">HOMES</a>
           </li>
           <li className="navigation-list__item">
-            <a href="#" className="navigation-list__link">HOSTS</a>
+            <a href="/hosts" className="navigation-list__link">HOSTS</a>
           </li>
         </ul>
       </div>
@@ -24,10 +24,10 @@ const Navigation = () => {
       <div className="navigation__right">
         <ul className="navigation-list">
           <li className="navigation-list__item">
-            <a href="#" className="navigation-list__link">Need help?</a>
+            <a href="/help" className="navigation-list__link">Need help?</a>
           </li>
           <li className="navigation-list__item">
-            <a href="#" className="navigation-list__link">Login</a>
+            <a href="/login" className="navigation-list__link">Login</a>
           </li>
         </ul>
         <div className="navigation__search">
